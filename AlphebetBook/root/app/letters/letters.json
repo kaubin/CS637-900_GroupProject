@@ -1,0 +1,26 @@
+[
+    {
+        "lowercase": "a",
+        "imageUrl": "img/animals/african_elephant.jpg",
+        "name": "African Elephant",
+        "narrativeSelection": "0"
+    },
+    {
+        "lowercase": "b",
+        "imageUrl": "img/animals/bear5.jpg",
+        "name": "Bear",
+        "narrativeSelection": "0"
+    },
+    {
+        "lowercase": "c",
+        "imageUrl": "img/animals/chipmunk1.jpg",
+        "name": "Chipmunk",
+        "narrativeSelection": "0"
+    },
+    {
+        "lowercase": "d",
+        "imageUrl": "img/animals/deer5.jpg",
+        "name": "Deer",
+        "narrativeSelection": "0"
+    }
+]
