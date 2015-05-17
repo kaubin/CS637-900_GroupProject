@@ -4,76 +4,88 @@
 
 var abControllers = angular.module('abControllers', []);
 
-abControllers.controller('PhoneListCtrl', ['$scope', 'Phone', 'Letter',
-  function($scope, Phone, Letter) {
+abControllers.controller('PhoneListCtrl', ['$scope', 'Phone', 'Letter', 'BookContent',
+  function($scope, Phone, Letter, BookContent) {
     $scope.phones = Phone.query();
     $scope.alphabet = Letter.query();
     $scope.orderProp = 'age';
+    $scope.pageWithFocus = 1;
+    $scope.letterImages = [];
+
+    $scope.setPage = function(page) {
+      BookContent.setCurrentPage(page);
+    }
+
+    $scope.getLetter = function(id) {
+      $scope.letter = Letter.get({letterId: id}, function(letter) {
+        $scope.mainImageUrl = letter.images[0].file;
+        $scope.letterImages = letter.images;
+        console.log("in fuction letter images are", letter.images);
+      });
+    }
 
     $scope.enumerateLetters = function( name ) {
 
-      // First, reset the groups.
-      $scope.groups = [];
+      // First, reset the book page contents.
+      $scope.bookContent = [];
+      BookContent.clearBook();
 
       for ( var i = 0 ; i < name.length ; i++ ) {
 
         var cLetter = name[ i ];
 
-        //$scope.phones.forEach(function (item) {
-        //  //console.log("current item is", item);
-        //  if (item["age"] == 17) {
-        //    var group = {
-        //      label: cLetter,
-        //      selectedImg: 0,
-        //      meta: item
-        //    };
-        //
-        //    $scope.groups.push( group );
-        //  }
-        //});
+        $scope.getLetter(cLetter);
+
+        console.log("letter images are", $scope.letterImages);
 
         $scope.alphabet.forEach(function (item) {
           //console.log("current item is", item);
           if (item["lowercase"] == cLetter.toLowerCase()) {
-            var group = {
+
+            var pageContent = {
               label: cLetter,
-              selectedImg: 0,
+              pageNumber: i,
               meta: item
             };
 
-            $scope.groups.push( group );
+            BookContent.addPage(pageContent);
           }
         });
 
-        //var group = {
-        //  label: letter,
-        //  meta: []
-        //};
-
-        //$scope.groups.push( group );
+        $scope.bookContent = BookContent.getBook();
 
       }
     };
   }]);
 
-abControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Phone',
-  function($scope, $routeParams, Phone) {
-    $scope.phone = Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
-      $scope.mainImageUrl = phone.images[0];
-    });
+//abControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Phone',
+//  function($scope, $routeParams, Phone) {
+//    $scope.phone = Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
+//      $scope.mainImageUrl = phone.images[0];
+//    });
+//
+//    $scope.setImage = function(imageUrl) {
+//      $scope.mainImageUrl = imageUrl;
+//    }
+//  }]);
 
-    $scope.setImage = function(imageUrl) {
-      $scope.mainImageUrl = imageUrl;
-    }
-  }]);
-
-abControllers.controller('LetterDetailCtrl', ['$scope', '$routeParams', 'Letter',
-  function($scope, $routeParams, Letter) {
+abControllers.controller('LetterDetailCtrl', ['$scope', '$routeParams', 'Letter', 'BookContent',
+  function($scope, $routeParams, Letter, BookContent) {
     $scope.letter = Letter.get({letterId: $routeParams.letterId}, function(letter) {
-      $scope.mainImageUrl = letter.images[0];
+      $scope.mainImageUrl = letter.images[0].file;
     });
 
-    $scope.setImage = function(imageUrl) {
-      $scope.mainImageUrl = imageUrl;
+    $scope.setImage = function(thumb) {
+      $scope.mainImageUrl = thumb.file;
+      $scope.narrativeList = thumb.narratives;
+      var pageNum = BookContent.getCurrentPage();
+      var page = BookContent.getPage(pageNum);
+      page.meta.imageUrl = thumb.file;
+    }
+
+    $scope.setNarrative = function(narrative) {
+      var pageNum = BookContent.getCurrentPage();
+      var page = BookContent.getPage(pageNum);
+      page.meta.narrative = narrative;
     }
   }]);

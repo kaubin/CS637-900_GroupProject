@@ -1,21 +1,38 @@
 {
     "uppercase": "A",
     "lowercase": "a",
-    "images": {
-        "img/animals/african_elephant.jpg": [
-            "The elephant arrives in force. \u2018An extra E to stay the course!\u2019",
-            "Narrative 2",
-            "Narrative 3"
-        ],
-        "img/animals/alligator.jpg": [
-            "Narrative 1",
-            "Narrative 2",
-            "Narrative 3"
-        ],
-        "img/animals/aye_aye_.jpg": [
-            "Narrative 1",
-            "Narrative 2",
-            "Narrative 3"
-        ]
-    }
+    "images":[{
+        "file":"img/animals/african_elephant.jpg",
+        "name":"Deer",
+		"narratives":[{
+			"narrative":"Narrative 1"
+			},
+			{
+			"narrative":"Narrative 2"
+			},
+			{
+			"narrative":"Narrative 3"
+			}
+		]},
+        {
+        "file":"img/animals/alligator.jpg",
+        "name":"Dog",
+		"narratives":[{
+			"narrative":"Narrative 1"
+			},
+			{
+			"narrative":"Narrative 2"
+			}
+		]},
+        {
+        "file":"img/animals/aye_aye_.jpg",
+        "name":"Dog",
+		"narratives":[{
+			"narrative":"Narrative 1"
+			},
+			{
+			"narrative":"Narrative 2"
+			}
+		]}
+    ]
 }
