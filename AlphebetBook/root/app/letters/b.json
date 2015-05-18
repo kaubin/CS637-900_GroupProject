@@ -3,22 +3,22 @@
     "lowercase": "b",
     "images":[{
         "file":"img/animals/bear5.jpg",
-        "name":"Deer",
+        "name":"Bear",
 		"narratives":[{
-			"narrative":"Narrative 1"
+			"narrative":"Bear 1"
 			},
 			{
-			"narrative":"Narrative 2"
+			"narrative":"Bear 2"
 			}
 		]},
         {
         "file":"img/animals/bulldog3.jpg",
-        "name":"Dog",
+        "name":"Bulldog",
 		"narratives":[{
-			"narrative":"Narrative 1"
+			"narrative":"Bulldog 1"
 			},
 			{
-			"narrative":"Narrative 2"
+			"narrative":"Bulldog 2"
 			}
 		]}
     ]

@@ -3,35 +3,35 @@
     "lowercase": "a",
     "images":[{
         "file":"img/animals/african_elephant.jpg",
-        "name":"Deer",
+        "name":"African Elephant",
 		"narratives":[{
-			"narrative":"Narrative 1"
+			"narrative":"African Elephant 1"
 			},
 			{
-			"narrative":"Narrative 2"
+			"narrative":"African Elephant 2"
 			},
 			{
-			"narrative":"Narrative 3"
+			"narrative":"African Elephant 3"
 			}
 		]},
         {
         "file":"img/animals/alligator.jpg",
-        "name":"Dog",
+        "name":"Alligator",
 		"narratives":[{
-			"narrative":"Narrative 1"
+			"narrative":"Alligator 1"
 			},
 			{
-			"narrative":"Narrative 2"
+			"narrative":"Alligator 2"
 			}
 		]},
         {
         "file":"img/animals/aye_aye_.jpg",
-        "name":"Dog",
+        "name":"Eye_Eye",
 		"narratives":[{
-			"narrative":"Narrative 1"
+			"narrative":"Eye Eye 1"
 			},
 			{
-			"narrative":"Narrative 2"
+			"narrative":"Eye Eye 2"
 			}
 		]}
     ]

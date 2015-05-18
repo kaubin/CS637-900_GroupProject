@@ -18,20 +18,51 @@ abServices.factory('Letter', ['$resource',
     });
   }]);
 
-//abServices.factory('LetterTwo', ['$resource',
-//  function($resource){
-//    return $resource('test/:letterId.json', {}, {
-//      query: {method:'GET', isArray:true}
-//    });
-//  }]);
-
-//abServices.factory('LetterTwo', function($resource){
-//  return $resource('/test/:id')
-//});
-
 abServices.service('BookContent', function() {
   var myList = [];
+  var customNarratives = [];
   var currentPage = 1;
+
+  var findCustomNarratives = function(animalName) {
+    var temp = undefined;
+    customNarratives.forEach(function (nar) {
+      //console.log("current item is", item);
+      if (nar["name"].toLowerCase() == animalName.toLowerCase()) {
+        temp = nar.narrative;
+      }
+    });
+    return temp;
+  }
+
+  var findCustomAnimal = function(animalName) {
+    var temp = undefined;
+    customNarratives.forEach(function (nar) {
+      //console.log("current item is", item);
+      if (nar["name"].toLowerCase() == animalName.toLowerCase()) {
+        temp = nar;
+      }
+    });
+    return temp;
+  }
+
+  var addNarrative = function(animalName, newNarrative) {
+    var found = findCustomAnimal(animalName);
+
+    if(found === undefined){
+      var animalContent = {
+        name: animalName,
+        narrative: []
+      };
+      found = animalContent;
+      customNarratives.push(animalContent);
+    }
+
+    var narContent = {
+      narrative: newNarrative,
+    };
+
+    found.narrative.push(narContent);
+  }
 
   var getCurrentPage = function() {
     return currentPage;
@@ -62,6 +93,9 @@ abServices.service('BookContent', function() {
   }
 
   return {
+    findCustomAnimal: findCustomAnimal,
+    findCustomNarratives: findCustomNarratives,
+    addNarrative: addNarrative,
     setCurrentPage: setCurrentPage,
     getCurrentPage: getCurrentPage,
     clearBook: clearBook,

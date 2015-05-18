@@ -5,20 +5,20 @@
         "file":"img/animals/deer5.jpg",
         "name":"Deer",
 		"narratives":[{
-			"narrative":"Narrative 1"
+			"narrative":"Deer 1"
 			},
 			{
-			"narrative":"Narrative 2"
+			"narrative":"Deer 2"
 			}
 		]},
         {
         "file":"img/animals/dog.jpeg",
         "name":"Dog",
 		"narratives":[{
-			"narrative":"Narrative 1"
+			"narrative":"Dog 1"
 			},
 			{
-			"narrative":"Narrative 2"
+			"narrative":"Dog 2"
 			}
 		]}
     ]

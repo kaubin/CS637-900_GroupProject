@@ -5,9 +5,9 @@
        ng-class="{active: mainImageUrl==img.file}">
 </div>
 
-<h1>{{letter.name}}</h1>
 
-<p>{{letter.description}}</p>
+
+<!--<p>{{letter.description}}</p>-->
 
 <ul class="phone-thumbs">
   <li ng-repeat="img in letter.images">
@@ -15,15 +15,32 @@
   </li>
 </ul>
 
-<div class="image-narratives">
+  <div>
+    <h1>{{mainAnimal}}</h1>
+    <h2>Current Narrative: {{mainNarrative}}</h2>
+    <!--<p>Selected Narrative: {{selectedItem}}</p>-->
+    <select size="10" multiple ng-multiple="true" ng-click="setNarrative(selectedItem[0])" ng-model="selectedItem" \>
+      <option ng-repeat="narItem in narrativeList" >{{narItem.narrative}}</option>
+    </select>
+    <input ng-model="nar">
+    <button class='btn btn-default' ng-click="addNarrative(nar)">Add Narrative</button>
+  </div>
 
-  <select size="10" multiple ng-multiple="true" ng-model="filterCondition.operator">
-    <option
-            ng-repeat="narItem in narrativeList"
-            value="{{narItem.narrative}}">
-      {{narItem.narrative}}
-    </option>
-  </select>
+<a href="#/phone">Back To Book</a>
+
+
+<!--<div class="image-narratives">-->
+
+
+
+
+  <!--<select size="10" multiple ng-multiple="true" ng-model="filterCondition.operator">-->
+    <!--<option-->
+            <!--ng-repeat="narItem in narrativeList"-->
+            <!--value="{{narItem.narrative}}">-->
+      <!--{{narItem.narrative}}-->
+    <!--</option>-->
+  <!--</select>-->
   <!--<ul>-->
     <!--<li>-->
       <!--<dl>-->
@@ -31,7 +48,7 @@
       <!--</dl>-->
     <!--</li>-->
   <!--</ul>-->
-</div>
+<!--</div>-->
 
 <!--<ul class="">-->
   <!--<li>-->

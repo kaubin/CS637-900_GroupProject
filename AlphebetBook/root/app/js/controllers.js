@@ -11,6 +11,7 @@ abControllers.controller('PhoneListCtrl', ['$scope', 'Phone', 'Letter', 'BookCon
     $scope.orderProp = 'age';
     $scope.pageWithFocus = 1;
     $scope.letterImages = [];
+    $scope.bookContent = BookContent.getBook();
 
     $scope.setPage = function(page) {
       BookContent.setCurrentPage(page);
@@ -20,7 +21,7 @@ abControllers.controller('PhoneListCtrl', ['$scope', 'Phone', 'Letter', 'BookCon
       $scope.letter = Letter.get({letterId: id}, function(letter) {
         $scope.mainImageUrl = letter.images[0].file;
         $scope.letterImages = letter.images;
-        console.log("in fuction letter images are", letter.images);
+        //console.log("in function letter images are", letter.images);
       });
     }
 
@@ -32,11 +33,11 @@ abControllers.controller('PhoneListCtrl', ['$scope', 'Phone', 'Letter', 'BookCon
 
       for ( var i = 0 ; i < name.length ; i++ ) {
 
-        var cLetter = name[ i ];
+        var cLetter = name[i];
 
         $scope.getLetter(cLetter);
 
-        console.log("letter images are", $scope.letterImages);
+        //console.log("letter images are", $scope.letterImages);
 
         $scope.alphabet.forEach(function (item) {
           //console.log("current item is", item);
@@ -58,25 +59,33 @@ abControllers.controller('PhoneListCtrl', ['$scope', 'Phone', 'Letter', 'BookCon
     };
   }]);
 
-//abControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Phone',
-//  function($scope, $routeParams, Phone) {
-//    $scope.phone = Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
-//      $scope.mainImageUrl = phone.images[0];
-//    });
-//
-//    $scope.setImage = function(imageUrl) {
-//      $scope.mainImageUrl = imageUrl;
-//    }
-//  }]);
-
 abControllers.controller('LetterDetailCtrl', ['$scope', '$routeParams', 'Letter', 'BookContent',
   function($scope, $routeParams, Letter, BookContent) {
     $scope.letter = Letter.get({letterId: $routeParams.letterId}, function(letter) {
-      $scope.mainImageUrl = letter.images[0].file;
+      var pageNum = BookContent.getCurrentPage();
+      var page = BookContent.getPage(pageNum);
+      $scope.mainImageUrl = page.meta.imageUrl;
+      $scope.mainNarrative = page.meta.narrative;
+      $scope.mainAnimal = page.meta.animalName;
+
+      // Get narratives for current animal
+      $scope.narrativeList = [];
+      letter.images.forEach(function (img) {
+        //console.log("current item is", item);
+        if (img["name"].toLowerCase() == $scope.mainAnimal.toLowerCase()) {
+          $scope.narrativeList = img.narratives;
+        }
+      });
+
+      var cNarratives = BookContent.findCustomNarratives($scope.mainAnimal);
+      if(cNarratives !== undefined){
+        $scope.narrativeList.push(cNarratives[0]);
+      }
     });
 
     $scope.setImage = function(thumb) {
       $scope.mainImageUrl = thumb.file;
+      $scope.mainAnimal = thumb.name;
       $scope.narrativeList = thumb.narratives;
       var pageNum = BookContent.getCurrentPage();
       var page = BookContent.getPage(pageNum);
@@ -87,5 +96,30 @@ abControllers.controller('LetterDetailCtrl', ['$scope', '$routeParams', 'Letter'
       var pageNum = BookContent.getCurrentPage();
       var page = BookContent.getPage(pageNum);
       page.meta.narrative = narrative;
+      $scope.mainNarrative = narrative;
     }
+
+    $scope.addNarrative = function(narrative) {
+
+      $scope.letter = Letter.get({letterId: $routeParams.letterId}, function(letter) {
+        // Get narratives for current animal
+        $scope.narrativeList = [];
+        letter.images.forEach(function (img) {
+          //console.log("current item is", item);
+          if (img["name"].toLowerCase() == $scope.mainAnimal.toLowerCase()) {
+            $scope.narrativeList = img.narratives;
+          }
+        });
+
+        BookContent.addNarrative($scope.mainAnimal, narrative);
+
+        var cNarratives = BookContent.findCustomNarratives($scope.mainAnimal);
+        if(cNarratives !== undefined){
+          cNarratives.forEach(function (nar) {
+            $scope.narrativeList.push(nar);
+          });
+        }
+      });
+    }
+
   }]);
