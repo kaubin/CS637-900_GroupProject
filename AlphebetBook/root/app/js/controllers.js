@@ -30,10 +30,9 @@ abControllers.controller('BookPagesCtrl', ['$scope', 'Letter', 'BookContent',
     // Process each letter in $scope.childName. Create a page for each letter.
     $scope.enumerateLetters = function( ) {
 
-      name = $scope.childName;
       // First, reset the book page contents.
       $scope.bookContent = [];
-      BookContent.setName(name);
+      BookContent.setName($scope.childName);
       BookContent.clearBook();
 
       for ( var i = 0 ; i < name.length ; i++ ) {
