@@ -19,25 +19,20 @@ describe('ab controllers', function() {
 
     beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
       $httpBackend = _$httpBackend_;
-      $httpBackend.expectGET('phones/phones.json').
-          respond([{name: 'Nexus S'}, {name: 'Motorola DROID'}]);
+      $httpBackend.expectGET('letters/letters.json').
+          respond([{animalName: 'African Elephant'}, {animalName: 'Bear'}]);
 
       scope = $rootScope.$new();
       ctrl = $controller('PhoneListCtrl', {$scope: scope});
     }));
 
 
-    it('should create "phones" model with 2 phones fetched from xhr', function() {
-      expect(scope.phones).toEqualData([]);
+    it('should create "animals" model with 2 letters fetched from xhr', function() {
+      expect(scope.alphabet).toEqualData([]);
       $httpBackend.flush();
 
-      expect(scope.phones).toEqualData(
+      expect(scope.alphabet).toEqualData(
           [{name: 'Nexus S'}, {name: 'Motorola DROID'}]);
-    });
-
-
-    it('should set the default value of orderProp model', function() {
-      expect(scope.orderProp).toBe('age');
     });
   });
 
@@ -46,7 +41,7 @@ describe('ab controllers', function() {
     var scope, $httpBackend, ctrl,
         xyzPhoneData = function() {
           return {
-            name: 'phone xyz',
+            name: 'letter xyz',
                 images: ['image/url1.png', 'image/url2.png']
           }
         };
@@ -54,19 +49,19 @@ describe('ab controllers', function() {
 
     beforeEach(inject(function(_$httpBackend_, $rootScope, $routeParams, $controller) {
       $httpBackend = _$httpBackend_;
-      $httpBackend.expectGET('phones/xyz.json').respond(xyzPhoneData());
+      $httpBackend.expectGET('letters/xyz.json').respond(xyzPhoneData());
 
-      $routeParams.phoneId = 'xyz';
+      $routeParams.letterId = 'xyz';
       scope = $rootScope.$new();
       ctrl = $controller('PhoneDetailCtrl', {$scope: scope});
     }));
 
 
-    it('should fetch phone detail', function() {
-      expect(scope.phone).toEqualData({});
+    it('should fetch letter detail', function() {
+      expect(scope.letter).toEqualData({});
       $httpBackend.flush();
 
-      expect(scope.phone).toEqualData(xyzPhoneData());
+      expect(scope.letter).toEqualData(xyzPhoneData());
     });
   });
 });

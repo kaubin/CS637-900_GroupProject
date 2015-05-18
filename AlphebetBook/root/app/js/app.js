@@ -2,6 +2,7 @@
 
 /* App Module */
 
+// Define module dependencies.
 var abApp = angular.module('abApp', [
   'ngRoute',
   'abAnimations',
@@ -11,18 +12,19 @@ var abApp = angular.module('abApp', [
   'abServices'
 ]);
 
+// Define site navigation an assign controllers.
 abApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/phones', {
-        templateUrl: 'partials/phone-list.html',
-        controller: 'PhoneListCtrl'
+      when('/bookPages', {
+        templateUrl: 'partials/book-pages.html',
+        controller: 'BookPagesCtrl'
       }).
       when('/letters/:letterId', {
         templateUrl: 'partials/letter-detail.html',
         controller: 'LetterDetailCtrl'
       }).
       otherwise({
-        redirectTo: '/phones'
+        redirectTo: '/bookPages'
       });
   }]);

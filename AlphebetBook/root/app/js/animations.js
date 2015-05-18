@@ -1,7 +1,9 @@
 var abAnimations = angular.module('abAnimations', ['ngAnimate']);
 
+// Create AngularJS Animation
 abAnimations.animation('.phone', function() {
 
+  // Create animate up state
   var animateUp = function(element, className, done) {
     if(className != 'active') {
       return;
@@ -24,6 +26,7 @@ abAnimations.animation('.phone', function() {
     };
   }
 
+  // Create animate up state
   var animateDown = function(element, className, done) {
     if(className != 'active') {
       return;

@@ -4,13 +4,6 @@
 
 var abServices = angular.module('abServices', ['ngResource']);
 
-abServices.factory('Phone', ['$resource',
-  function($resource){
-    return $resource('phones/:phoneId.json', {}, {
-      query: {method:'GET', params:{phoneId:'phones'}, isArray:true}
-    });
-  }]);
-
 abServices.factory('Letter', ['$resource',
   function($resource){
     return $resource('letters/:letterId.json', {}, {
@@ -18,10 +11,12 @@ abServices.factory('Letter', ['$resource',
     });
   }]);
 
+// Service holding current book pages, selected image, selected narrative and custom narratives.
 abServices.service('BookContent', function() {
   var myList = [];
   var customNarratives = [];
   var currentPage = 1;
+  var child_name = "";
 
   var findCustomNarratives = function(animalName) {
     var temp = undefined;
@@ -64,6 +59,14 @@ abServices.service('BookContent', function() {
     found.narrative.push(narContent);
   }
 
+  var getName = function() {
+    return child_name;
+  }
+
+  var setName = function(name) {
+    child_name = name;
+  }
+
   var getCurrentPage = function() {
     return currentPage;
   }
@@ -93,6 +96,8 @@ abServices.service('BookContent', function() {
   }
 
   return {
+    getName: getName,
+    setName: setName,
     findCustomAnimal: findCustomAnimal,
     findCustomNarratives: findCustomNarratives,
     addNarrative: addNarrative,

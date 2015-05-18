@@ -1,6 +1,6 @@
-<div class="phone-images">
+<div class="animal-images">
   <img ng-src="{{img.file}}"
-       class="phone"
+       class="animal"
        ng-repeat="img in letter.images"
        ng-class="{active: mainImageUrl==img.file}">
 </div>
@@ -9,7 +9,7 @@
 
 <!--<p>{{letter.description}}</p>-->
 
-<ul class="phone-thumbs">
+<ul class="animal-thumbs">
   <li ng-repeat="img in letter.images">
     <img ng-src="{{img.file}}" ng-click="setImage(img)">
   </li>
@@ -26,7 +26,7 @@
     <button class='btn btn-default' ng-click="addNarrative(nar)">Add Narrative</button>
   </div>
 
-<a href="#/phone">Back To Book</a>
+<a href="#/bookPages">Back To Book</a>
 
 
 <!--<div class="image-narratives">-->

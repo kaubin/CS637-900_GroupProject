@@ -3,15 +3,15 @@
     <div class="col-md-2">
       <!--Sidebar content-->
 
-      Search: <input ng-change="enumerateLetters(letters)" ng-model="letters">
+      Search: <input type="text" ng-model="childName" ng-change="enumerateLetters()">
 
     </div>
     <div class="col-md-10">
       <!--Body content-->
 
-      <ul class="phones">
+      <ul class="animals">
         <li ng-repeat="page in bookContent"
-          class="thumbnail phone-listing">
+          class="thumbnail animal-listing">
           <p> {{ page.label }} </p>
           <a href="#/letters/{{page.meta.lowercase}}" ng-click="setPage(page.pageNumber)"  class="thumb"><img ng-src="{{page.meta.imageUrl}}"></a>
           <a href="#/letters/{{page.meta.lowercase}}" ng-click="setPage(page.pageNumber)">{{page.meta.name}}</a>
