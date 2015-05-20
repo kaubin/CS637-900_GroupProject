@@ -35,10 +35,10 @@ abControllers.controller('BookPagesCtrl', ['$scope', 'Letter', 'BookContent',
       BookContent.setName($scope.childName);
       BookContent.clearBook();
 
-      for ( var i = 0 ; i < name.length ; i++ ) {
+      for ( var i = 0 ; i < $scope.childName.length ; i++ ) {
 
         // Current letter for processing
-        var cLetter = name[i];
+        var cLetter = $scope.childName[i];
 
         // Retrieve letter JSON meta data (example: a.JSON or b.JSON).
         $scope.getLetter(cLetter);
