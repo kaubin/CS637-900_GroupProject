@@ -1,0 +1,25 @@
+{
+    "uppercase": "S",
+    "lowercase": "s",
+    "images":[{
+        "file":"img/animals/squirrel10.jpg",
+        "name":"Squirrel",
+		"narratives":[{
+			"narrative":"Squirrel eating something."
+			},
+			{
+			"narrative":"Squirrel in the woods."
+			}
+		]},
+        {
+        "file":"img/animals/starfish3.jpg",
+        "name":"StarFish",
+		"narratives":[{
+			"narrative":"StarFish is a Fish in the Star Shape."
+			},
+			{
+			"narrative":"StarFish lives in the water."
+			}
+		]}
+    ]
+}

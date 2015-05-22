@@ -1,0 +1,25 @@
+{
+    "uppercase": "N",
+    "lowercase": "n",
+    "images":[{
+        "file":"img/animals/nightingale5.jpg",
+        "name":"Nightingale",
+		"narratives":[{
+			"narrative":"Nightingale sings beautifully."
+			},
+			{
+			"narrative":"Nightingale sleeps on the tree."
+			}
+		]},
+        {
+        "file":"img/animals/nurse_shark9.jpg",
+        "name":"Nurse Shark",
+		"narratives":[{
+			"narrative":"This is a Nurse Shark."
+			},
+			{
+			"narrative":"Sharks lives in waters."
+			}
+		]}
+    ]
+}

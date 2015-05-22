@@ -1,15 +1,15 @@
 [
     {
         "lowercase": "a",
-        "imageUrl": "img/animals/african_elephant.jpg",
-        "animalName": "African Elephant",
-        "narrative": "The elephant arrives in force. \u2018An extra E to stay the course!\u2019"
+        "imageUrl": "img/animals/alligator.jpg",
+        "animalName": "Alligator",
+        "narrative": "Alligator jaws are very dangerous."
     },
     {
         "lowercase": "b",
         "imageUrl": "img/animals/bear5.jpg",
         "animalName": "Bear",
-        "narrative": "Narrative 1"
+        "narrative": "Bears look cute until they are hungry."
     },
     {
         "lowercase": "c",
@@ -21,6 +21,138 @@
         "lowercase": "d",
         "imageUrl": "img/animals/deer5.jpg",
         "animalName": "Deer",
-        "narrative": "Narrative 2"
+        "narrative": "Deer scurry though the grass."
+    },
+    {
+        "lowercase": "e",
+        "imageUrl": "img/animals/eagle1.jpg",
+        "animalName": "Eagle",
+        "narrative": "Eagle flies majestically though the forest."
+    },
+    {
+        "lowercase": "f",
+        "imageUrl": "img/animals/fox3.jpg",
+        "animalName": "Fox",
+        "narrative": "Fox is clever."
+    },
+    {
+        "lowercase": "g",
+        "imageUrl": "img/animals/giraffe7.jpg",
+        "animalName": "Giraffe",
+        "narrative": "Giraffe has long legs."
+    },
+    {
+        "lowercase": "h",
+        "imageUrl": "img/animals/hamster8.jpg",
+        "animalName": "Hamster",
+        "narrative": "Hamster is lying."
+    },
+    {
+        "lowercase": "i",
+        "imageUrl": "img/animals/iguana8.jpg",
+        "animalName": "Iguana",
+        "narrative": "Iguana is on the tree."
+    },
+    {
+        "lowercase": "j",
+        "imageUrl": "img/animals/jaguar7.jpg",
+        "animalName": "Jaguar",
+        "narrative": "Is Jaguar cute?"
+    },
+    {
+        "lowercase": "k",
+        "imageUrl": "img/animals/kangaroo8.jpg",
+        "animalName": "Kangaroo",
+        "narrative": "Kangaroo has a long feet."
+    },
+    {
+        "lowercase": "l",
+        "imageUrl": "img/animals/leopard2.jpg",
+        "animalName": "Leopard",
+        "narrative": "Leopard is looking at you."
+    },
+    {
+        "lowercase": "m",
+        "imageUrl": "img/animals/monkey9.jpg",
+        "animalName": "Monkey",
+        "narrative": "Monkey is on the Tree."
+    },
+    {
+        "lowercase": "n",
+        "imageUrl": "img/animals/nightingale5.jpg",
+        "animalName": "Nightingale",
+        "narrative": "Nightingale sings beautifully."
+    },
+    {
+        "lowercase": "o",
+        "imageUrl": "img/animals/octopus3.jpg",
+        "animalName": "Octopus",
+        "narrative": "Octopus has many legs."
+    },
+    {
+        "lowercase": "p",
+        "imageUrl": "img/animals/penguin2.jpg",
+        "animalName": "Penguins",
+        "narrative": "Penguins are cute, right?"
+    },
+    {
+        "lowercase": "q",
+        "imageUrl": "img/animals/quail8.jpg",
+        "animalName": "Quail",
+        "narrative": "Quail is a round bird."
+    },
+    {
+        "lowercase": "r",
+        "imageUrl": "img/animals/rabbit.jpg",
+        "animalName": "Rabbit",
+        "narrative": "Rabbit is relaxing."
+    },
+    {
+        "lowercase": "s",
+        "imageUrl": "img/animals/squirrel10.jpg",
+        "animalName": "Squirrel",
+        "narrative": "Squirrel eating something."
+    },
+    {
+        "lowercase": "t",
+        "imageUrl": "img/animals/tiger7.jpg",
+        "animalName": "Tiger",
+        "narrative": "Tiger is watching the kids play."
+    },
+    {
+        "lowercase": "u",
+        "imageUrl": "img/animals/uguisu3.jpg",
+        "animalName": "Uguisu",
+        "narrative": "Uguisu is a bird."
+    },
+    {
+        "lowercase": "v",
+        "imageUrl": "img/animals/vervet_monkey7.jpg",
+        "animalName": "Vervet Monkey",
+        "narrative": "Vervet Monkey is relaxing."
+    },
+    {
+        "lowercase": "w",
+        "imageUrl": "img/animals/wolf4.jpg",
+        "animalName": "Wolf",
+        "narrative": "Wolf enjoys the grass."
+    },
+    {
+        "lowercase": "x",
+        "imageUrl": "img/animals/Xerus.jpg",
+        "animalName": "Xerus",
+        "narrative": "Xerus looks alot like a squirrel."
+    },
+    {
+        "lowercase": "y",
+        "imageUrl": "img/animals/yellow-eyed_penguin6.jpg",
+        "animalName": "Yellow-eyed Penguin",
+        "narrative": "Yellow-eyed penguin has yellow eyes."
+    },
+    {
+        "lowercase": "z",
+        "imageUrl": "img/animals/zebra6.jpg",
+        "animalName": "Zebra",
+        "narrative": "Zebra has black stripes"
     }
 ]

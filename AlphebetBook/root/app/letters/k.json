@@ -1,0 +1,25 @@
+{
+    "uppercase": "K",
+    "lowercase": "k",
+    "images":[{
+        "file":"img/animals/kangaroo8.jpg",
+        "name":"Kangaroo",
+		"narratives":[{
+			"narrative":"Kangaroo has a long feet."
+			},
+			{
+			"narrative":"Kangaroo is watching you."
+			}
+		]},
+        {
+        "file":"img/animals/kingfisher1.jpg",
+        "name":"Kingfisher",
+		"narratives":[{
+			"narrative":"Kingfisher has a long peek."
+			},
+			{
+			"narrative":"Kingfisher is with the buddy."
+			}
+		]}
+    ]
+}

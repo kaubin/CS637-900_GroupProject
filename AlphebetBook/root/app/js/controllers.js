@@ -20,6 +20,10 @@ abControllers.controller('BookPagesCtrl', ['$scope', 'Letter', 'BookContent',
       BookContent.setCurrentPage(page);
     }
 
+    $scope.setDOB = function(dob){
+      BookContent.setDOB(dob);
+    }
+
     // Get current page number
     $scope.getLetter = function(id) {
       $scope.letter = Letter.get({letterId: id}, function(letter) {
@@ -33,7 +37,30 @@ abControllers.controller('BookPagesCtrl', ['$scope', 'Letter', 'BookContent',
       // First, reset the book page contents.
       $scope.bookContent = [];
       BookContent.setName($scope.childName);
+      BookContent.setDOB($scope.birthDate);
       BookContent.clearBook();
+
+      // Add extra page at beginning of book when birth date is provided.
+      if ($scope.birthDate !== undefined) {
+        var tItem = {
+          animalName: "Alligator",
+          imageUrl: "",
+          lowercase: "a",
+          narrative: "On "
+          + $scope.birthDate.toDateString()
+          + " a baby was born. The animals were so happy that they each chimed in with some words of wisdom..."
+        }
+
+        // Create a page with content that uses the birth date.
+        var birthDataPage = {
+          label: "",
+          pageNumber: i,
+          meta: tItem
+        };
+
+        // Add page to book
+        BookContent.addPage(birthDataPage);
+      }
 
       for ( var i = 0 ; i < $scope.childName.length ; i++ ) {
 

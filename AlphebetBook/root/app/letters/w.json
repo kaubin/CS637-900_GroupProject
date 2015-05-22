@@ -1,0 +1,25 @@
+{
+    "uppercase": "W",
+    "lowercase": "w",
+    "images":[{
+        "file":"img/animals/wolf4.jpg",
+        "name":"Wolf",
+		"narratives":[{
+			"narrative":"Wolf enjoys the grass."
+			},
+			{
+			"narrative":"The wolf is easily frightened."
+			}
+		]},
+        {
+        "file":"img/animals/woodpecker5.jpeg",
+        "name":"Woodpecker",
+		"narratives":[{
+			"narrative":"Woodpecker searches for grubs in bark."
+			},
+			{
+			"narrative":"Woodpecker hard work echos thoughout the forest."
+			}
+		]}
+    ]
+}

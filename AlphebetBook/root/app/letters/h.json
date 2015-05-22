@@ -1,0 +1,25 @@
+{
+    "uppercase": "H",
+    "lowercase": "h",
+    "images":[{
+        "file":"img/animals/hamster8.jpg",
+        "name":"Hamster",
+		"narratives":[{
+			"narrative":"Hamster is lying."
+			},
+			{
+			"narrative":"Hamster has a beautiful black eyes."
+			}
+		]},
+        {
+        "file":"img/animals/horse1.jpg",
+        "name":"Horse",
+		"narratives":[{
+			"narrative":"Horse is looking at you."
+			},
+			{
+			"narrative":"Its a white Horse."
+			}
+		]}
+    ]
+}

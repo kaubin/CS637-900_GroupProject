@@ -1,0 +1,25 @@
+{
+    "uppercase": "U",
+    "lowercase": "u",
+    "images":[{
+        "file":"img/animals/uguisu3.jpg",
+        "name":"Uguisu",
+		"narratives":[{
+			"narrative":"Uguisu is a bird."
+			},
+			{
+			"narrative":"Uguisu is up on the tree."
+			}
+		]},
+        {
+        "file":"img/animals/umbrellabird4.jpg",
+        "name":"UmbrellaBird",
+		"narratives":[{
+			"narrative":"UmbrellaBird is a black and red colour bird."
+			},
+			{
+			"narrative":"UmbrellaBird has a round nose."
+			}
+		]}
+    ]
+}

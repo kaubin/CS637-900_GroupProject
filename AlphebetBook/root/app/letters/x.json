@@ -1,0 +1,25 @@
+{
+    "uppercase": "X",
+    "lowercase": "x",
+    "images":[{
+        "file":"img/animals/Xerus.jpg",
+        "name":"Xerus",
+		"narratives":[{
+			"narrative":"Xerus looks alot like a squirrel."
+			},
+			{
+			"narrative":"Xerus live in holes in the ground."
+			}
+		]},
+        {
+        "file":"img/animals/x-ray_tetra1.jpg",
+        "name":"X-Ray Tetra",
+		"narratives":[{
+			"narrative":"X-Ray Tetra is a fish."
+			},
+			{
+			"narrative":"X-Ray Tetra has golden fins."
+			}
+		]}
+    ]
+}

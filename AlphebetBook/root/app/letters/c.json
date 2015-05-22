@@ -5,20 +5,20 @@
         "file":"img/animals/chipmunk1.jpg",
         "name":"Chipmunk",
 		"narratives":[{
-			"narrative":"Chipmunk 1"
+			"narrative":"Chipmunk scurries up the tree."
 			},
 			{
-			"narrative":"Chipmunk 2"
+			"narrative":"Chipmunks are so cute."
 			}
 		]},
         {
         "file":"img/animals/crab6.jpg",
         "name":"Crab",
 		"narratives":[{
-			"narrative":"Crab 1"
+			"narrative":"Crab sneaks siteways to get away."
 			},
 			{
-			"narrative":"Crab 2"
+			"narrative":"Crab claws are very dangerous."
 			}
 		]}
     ]

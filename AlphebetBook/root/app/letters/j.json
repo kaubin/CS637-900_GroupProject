@@ -1,0 +1,25 @@
+{
+    "uppercase": "J",
+    "lowercase": "j",
+    "images":[{
+        "file":"img/animals/jaguar7.jpg",
+        "name":"Jaguar",
+		"narratives":[{
+			"narrative":"Is Jaguar cute?"
+			},
+			{
+			"narrative":"Jaguar is staring at you."
+			}
+		]},
+        {
+        "file":"img/animals/jellyfish4.jpg",
+        "name":"JellyFish",
+		"narratives":[{
+			"narrative":"JellyFish is golden."
+			},
+			{
+			"narrative":"JellyFish swimming in water."
+			}
+		]}
+    ]
+}

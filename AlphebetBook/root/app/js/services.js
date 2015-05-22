@@ -18,6 +18,7 @@ abServices.service('BookContent', function() {
   var currentPage = 1;
   var child_name = "";
 
+  // Returns sample narratives for animal.
   var findCustomNarratives = function(animalName) {
     var temp = undefined;
     customNarratives.forEach(function (nar) {
@@ -29,6 +30,7 @@ abServices.service('BookContent', function() {
     return temp;
   }
 
+  // Returns custom narratives for animal.
   var findCustomAnimal = function(animalName) {
     var temp = undefined;
     customNarratives.forEach(function (nar) {
@@ -40,6 +42,7 @@ abServices.service('BookContent', function() {
     return temp;
   }
 
+  // Add custom narrative for an animal.
   var addNarrative = function(animalName, newNarrative) {
     var found = findCustomAnimal(animalName);
 
@@ -59,22 +62,37 @@ abServices.service('BookContent', function() {
     found.narrative.push(narContent);
   }
 
+  // Get child name.
   var getName = function() {
     return child_name;
   }
 
+  // Set child name.
   var setName = function(name) {
     child_name = name;
   }
 
+  // Get child's date of birth.
+  var getDOB = function() {
+    return child_name;
+  }
+
+  // Set child's date of birth.
+  var setDOB = function(name) {
+    child_name = name;
+  }
+
+  // Get current page with application focus.
   var getCurrentPage = function() {
     return currentPage;
   }
 
+  // Set current page with application focus.
   var setCurrentPage = function(page) {
     currentPage = page;
   }
 
+  // Clear the book pages.
   var clearBook = function() {
     myList = [];
   }
@@ -83,19 +101,24 @@ abServices.service('BookContent', function() {
     return myList.length;
   }
 
+  // Add a page.
   var addPage = function(newObj) {
     myList.push(newObj);
   }
 
+  // Get a single page.
   var getPage = function(page){
     return myList[page];
   }
 
+  // Gets entire book.
   var getBook = function(){
     return myList;
   }
 
   return {
+    getDOB: getDOB,
+    setDOB: setDOB,
     getName: getName,
     setName: setName,
     findCustomAnimal: findCustomAnimal,

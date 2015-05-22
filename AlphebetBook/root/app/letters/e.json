@@ -1,0 +1,25 @@
+{
+    "uppercase": "E",
+    "lowercase": "e",
+    "images":[{
+        "file":"img/animals/eagle1.jpg",
+        "name":"Eagle",
+		"narratives":[{
+			"narrative":"Eagle flies majestically though the forest."
+			},
+			{
+			"narrative":"Eagle can see for miles."
+			}
+		]},
+        {
+        "file":"img/animals/african_elephant.jpg",
+        "name":"Elephant",
+		"narratives":[{
+			"narrative":"The elephant arrives in force. \u2018An extra E to stay the course!\u2019"
+			},
+			{
+			"narrative":"Elephant uses its trunk to feed itself."
+			}
+		]}		
+    ]
+}

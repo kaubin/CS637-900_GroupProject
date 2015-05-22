@@ -1,0 +1,25 @@
+{
+    "uppercase": "Y",
+    "lowercase": "y",
+    "images":[{
+        "file":"img/animals/yellow-eyed_penguin6.jpg",
+        "name":"Yellow-eyed Penguin",
+		"narratives":[{
+			"narrative":"Yellow-eyed penguin has yellow eyes."
+			},
+			{
+			"narrative":"Yellow-eyed penguin is looking at you."
+			}
+		]},
+        {
+        "file":"img/animals/yorkshire_terrier1.jpg",
+        "name":"Yorkshire Terrier",
+		"narratives":[{
+			"narrative":"Yorkshire terrier has sharp teeth's."
+			},
+			{
+			"narrative":"Yorkshire terrier has a beautiful hair."
+			}
+		]}
+    ]
+}

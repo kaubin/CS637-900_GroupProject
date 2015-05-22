@@ -1,0 +1,25 @@
+{
+    "uppercase": "T",
+    "lowercase": "t",
+    "images":[{
+        "file":"img/animals/tiger7.jpg"
+        "name":"Tiger",
+		"narratives":[{
+			"narrative":"Tiger is watching the kids play."
+			},
+			{
+			"narrative":"Tiger is relaxing."
+			}
+		]},
+        {
+        "file":"img/animals/tortoise2.jpg",
+        "name":"Tortoise",
+		"narratives":[{
+			"narrative":"Tortoise walks slowly."
+			},
+			{
+			"narrative":"Tortoise has a shell."
+			}
+		]}
+    ]
+}

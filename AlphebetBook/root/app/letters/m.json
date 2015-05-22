@@ -1,0 +1,25 @@
+{
+    "uppercase": "M",
+    "lowercase": "m",
+    "images":[{
+        "file":"img/animals/monkey9.jpg",
+        "name":"Monkey",
+		"narratives":[{
+			"narrative":"Monkey is on the Tree."
+			},
+			{
+			"narrative":"Monkey is cute."
+			}
+		]},
+        {
+        "file":"img/animals/moose7.jpg",
+        "name":"Moose",
+		"narratives":[{
+			"narrative":"Moose walking in waters."
+			},
+			{
+			"narrative":"Moose has big horns."
+			}
+		]}
+    ]
+}

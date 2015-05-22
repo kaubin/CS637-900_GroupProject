@@ -1,0 +1,25 @@
+{
+    "uppercase": "Q",
+    "lowercase": "q",
+    "images":[{
+       "file":"img/animals/quail8.jpg",
+        "name":"Quail",
+		"narratives":[{
+			"narrative":"Quail is a round bird."
+			},
+			{
+			"narrative":"Quail hides in the grass."
+			}
+		]},
+        {
+        "file":"img/animals/quoll4.jpg",
+        "name":"Quoll",
+		"narratives":[{
+			"narrative":"Quoll lives in Australia."
+			},
+			{
+			"narrative":"Quoll eats lizards."
+			}
+		]}
+    ]
+}

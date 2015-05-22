@@ -1,0 +1,25 @@
+{
+    "uppercase": "G",
+    "lowercase": "g",
+    "images":[{
+        "file":"img/animals/giraffe7.jpg",
+        "name":"Giraffe",
+		"narratives":[{
+			"narrative":"Giraffe has long legs."
+			},
+			{
+			"narrative":"Papa Giraffe with Baby Giraffe."
+			}
+		]},
+        {
+        "file":"img/animals/gorilla4.jpg",
+        "name":"Gorilla",
+		"narratives":[{
+			"narrative":"Gorilla is walking along."
+			},
+			{
+			"narrative":"Gorilla is having fun."
+			}
+		]}
+    ]
+}

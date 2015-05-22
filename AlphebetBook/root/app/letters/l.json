@@ -1,0 +1,25 @@
+{
+    "uppercase": "L",
+    "lowercase": "l",
+    "images":[{
+        "file":"img/animals/leopard2.jpg",
+        "name":"Leopard",
+		"narratives":[{
+			"narrative":"Leopard is looking at you."
+			},
+			{
+			"narrative":"Leopard moustache is awesome."
+			}
+		]},
+        {
+        "file":"img/animals/lion1.jpg",
+        "name":"Lion",
+		"narratives":[{
+			"narrative":"Lion is the King of the Jungle."
+			},
+			{
+			"narrative":"Lion is looking at you."
+			}
+		]}
+    ]
+}

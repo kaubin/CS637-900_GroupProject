@@ -5,20 +5,20 @@
         "file":"img/animals/deer5.jpg",
         "name":"Deer",
 		"narratives":[{
-			"narrative":"Deer 1"
+			"narrative":"Deer scurry though the grass."
 			},
 			{
-			"narrative":"Deer 2"
+			"narrative":"Deer can jump very high."
 			}
 		]},
         {
         "file":"img/animals/dog.jpeg",
         "name":"Dog",
 		"narratives":[{
-			"narrative":"Dog 1"
+			"narrative":"Dog barks to get his way."
 			},
 			{
-			"narrative":"Dog 2"
+			"narrative":"Dogs are mans best friend."
 			}
 		]}
     ]

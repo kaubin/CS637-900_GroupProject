@@ -1,0 +1,25 @@
+{
+    "uppercase": "i",
+    "lowercase": "I",
+    "images":[{
+        "file":"img/animals/iguana8.jpg",
+        "name":"Iguana",
+		"narratives":[{
+			"narrative":"Iguana is on the tree."
+			},
+			{
+			"narrative":"Iguana is green."
+			}
+		]},
+        {
+        "file":"img/animals/indri.jpg",
+        "name":"Indri",
+		"narratives":[{
+			"narrative":"Indri up on tree."
+			},
+			{
+			"narrative":"Indri is relaxing."
+			}
+		]}
+    ]
+}

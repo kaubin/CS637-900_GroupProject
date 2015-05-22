@@ -2,36 +2,23 @@
     "uppercase": "A",
     "lowercase": "a",
     "images":[{
-        "file":"img/animals/african_elephant.jpg",
-        "name":"African Elephant",
-		"narratives":[{
-			"narrative":"African Elephant 1"
-			},
-			{
-			"narrative":"African Elephant 2"
-			},
-			{
-			"narrative":"African Elephant 3"
-			}
-		]},
-        {
         "file":"img/animals/alligator.jpg",
         "name":"Alligator",
 		"narratives":[{
-			"narrative":"Alligator 1"
+			"narrative":"Alligator jaws are very dangerous."
 			},
 			{
-			"narrative":"Alligator 2"
+			"narrative":"Alligators are very fast, better find a tree!"
 			}
 		]},
         {
         "file":"img/animals/aye_aye_.jpg",
         "name":"Eye_Eye",
 		"narratives":[{
-			"narrative":"Eye Eye 1"
+			"narrative":"The Eye Eye is adorable."
 			},
 			{
-			"narrative":"Eye Eye 2"
+			"narrative":"Wonder how the Eye Eye got its name?"
 			}
 		]}
     ]

@@ -5,20 +5,20 @@
         "file":"img/animals/bear5.jpg",
         "name":"Bear",
 		"narratives":[{
-			"narrative":"Bear 1"
+			"narrative":"Bears look cute until they are hungry."
 			},
 			{
-			"narrative":"Bear 2"
+			"narrative":"Bears love honey."
 			}
 		]},
         {
         "file":"img/animals/bulldog3.jpg",
         "name":"Bulldog",
 		"narratives":[{
-			"narrative":"Bulldog 1"
+			"narrative":"Bulldog are so ugly they are cute."
 			},
 			{
-			"narrative":"Bulldog 2"
+			"narrative":"Bulldog drool all over."
 			}
 		]}
     ]

@@ -1,0 +1,25 @@
+{
+    "uppercase": "P",
+    "lowercase": "p",
+    "images":[{
+        "file":"img/animals/penguin2.jpg",
+        "name":"Penguins",
+		"narratives":[{
+			"narrative":"Penguins are cute, right?"
+			},
+			{
+			"narrative":"Penguins Walking in snow."
+			}
+		]},
+        {
+        "file":"img/animals/polar_bear1.jpg",
+        "name":"Polar Bear",
+		"narratives":[{
+			"narrative":"Polar Bear loves cold weather."
+			},
+			{
+			"narrative":"Polar Bear can walk on ice without the shoes."
+			}
+		]}
+    ]
+}

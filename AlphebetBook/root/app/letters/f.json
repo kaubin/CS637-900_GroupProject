@@ -1,0 +1,25 @@
+{
+    "uppercase": "F",
+    "lowercase": "f",
+    "images":[{
+        "file":"img/animals/fox3.jpg",
+        "name":"Fox",
+		"narratives":[{
+			"narrative":"Fox is clever."
+			},
+			{
+			"narrative":"Fox is very very clever."
+			}
+		]},
+        {
+        "file":"img/animals/frog4.jpg",
+        "name":"Frog",
+		"narratives":[{
+			"narrative":"Frog hops from leaf to leaf."
+			},
+			{
+			"narrative":"Frogs swims in water."
+			}
+		]}
+    ]
+}

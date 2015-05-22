@@ -1,0 +1,25 @@
+{
+    "uppercase": "Z",
+    "lowercase": "z",
+    "images":[{
+        "file":"img/animals/zebra6.jpg",
+        "name":"Zebra",
+		"narratives":[{
+			"narrative":"Zebra has black stripes."
+			},
+			{
+			"narrative":"Zebra is walking alone."
+			}
+		]},
+        {
+         "file":"img/animals/zebu6.jpg",
+        "name":"Zebu",
+		"narratives":[{
+			"narrative":"Zebu has large horns."
+			},
+			{
+			"narrative":"Zebu stole along the plains."
+			}
+		]}
+    ]
+}

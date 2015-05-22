@@ -1,0 +1,25 @@
+{
+    "uppercase": "O",
+    "lowercase": "o",
+    "images":[{
+        "file":"img/animals/octopus3.jpg",
+        "name":"Octopus",
+		"narratives":[{
+			"narrative":"Octopus has many legs."
+			},
+			{
+			"narrative":"Octopus lives in water."
+			}
+		]},
+        {
+        "file":"img/animals/ostrich.jpg",
+        "name":"Ostrich",
+		"narratives":[{
+			"narrative":"Ostrich has a long neck."
+			},
+			{
+			"narrative":"Ostrich walking up the hill."
+			}
+		]}
+    ]
+}

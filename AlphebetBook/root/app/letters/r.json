@@ -1,0 +1,25 @@
+{
+    "uppercase": "R",
+    "lowercase": "r",
+    "images":[{
+        "file":"img/animals/rabbit.jpg",
+        "name":"Rabbit",
+		"narratives":[{
+			"narrative":"Rabbit is relaxing."
+			},
+			{
+			"narrative":"Rabbit runs very fast."
+			}
+		]},
+        {
+        "file":"img/animals/rhinoceros2.jpg",
+        "name":"Rhinoceros",
+		"narratives":[{
+			"narrative":"Rhinoceros has a big nose."
+			},
+			{
+			"narrative":"Rhinoceros is watching the insects."
+			}
+		]}
+    ]
+}
